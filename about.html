@@ -41,7 +41,7 @@
 
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
+				<li class="current"><a href="about.html">About</a></li>
 				<li><a href="newmusic.html">New Music</a></li>
 				<li><a href="events.html">Events</a></li>
 			</ul>
@@ -53,36 +53,177 @@
 		
 		
 		<section class="about-content">
-				<h1>About Roosevelt</h1>
+				<h1 class="ml3">About Roosevelt</h1>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+
+				<img class= "hide-image" src="photos/lightbox-3.jpg" alt="photo of Roosevelt with microphone" title="photo of Roosevelt with microphone">
+
+				<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="photos/lightbox-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="photos/lightbox-8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="photos/lightbox-1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="photos/lightbox-2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="photos/lightbox-3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="photos/lightbox-4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="photos/lightbox-5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="photos/lightbox-6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="photos/lightbox-7.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">8 /8 </div>
+      <img src="photos/lightbox-8.jpg" style="width:100%">
+    </div>
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="photos/lightbox-1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="photos/lightbox-2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="photos/lightbox-3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="photos/lightbox-4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+
+     <div class="column">
+      <img class="demo" src="photos/lightbox-5.jpg" onclick="currentSlide(5)" alt="Lights">
+    </div>
+
+     <div class="column">
+      <img class="demo" src="photos/lightbox-6.jpg" onclick="currentSlide(6)" alt="Lights">
+    </div>
+
+     <div class="column">
+      <img class="demo" src="photos/lightbox-7.jpg" onclick="currentSlide(7)" alt="Lights">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="photos/lightbox-8.jpg" onclick="currentSlide(8)" alt="Lights">
+    </div>
+  </div>
+</div>
 				<div class="flex-container">
 					<article>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p>Roosevelt is an RnB artist from Kansas City, Missouri whose musical style is a mix of sultry neosoul and urban RnB. His musical influences go as far back as Sam Cooke and The Temptations and as recent as Khalid, Daniel Greene, and H.E.R. Roosevelt approaches his music with a sort of boundless enthusiasm that only a RnB purist can provide. However, he is not afraid to take risks and it is evident is latest projects. </p>
 
 				</article>
 
 				<article>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>His first album Indecisively in love, available on iTunes, touches on love, lost, redemption and everything in between.  His covers of top 100 RnB hits shows his ability to make any song his own. He is currently working on his sophomore album, title not yet released. Roosevelt has been singing all of his life. </p>
 				
 				</article>
 			</div>
+
+			<div class="flex">
+			
 		</section>
 
 		<aside>
 
-			<p>Follow me on social media. </p>
+			<p>Follow me on social media</p>
+
+			<div class="social">
+
+			<a href="https://www.facebook.com/profile.php?id=692754317" target="_blank"><img src="photos/facebook-black.png" alt="facebook logo" title="facebook logo"></a>
+
+			<a href="https://twitter.com/euriched" target="_blank"><img src="photos/twitter-black.png" alt="twitter logo" title="twitter logo"></a>
+
+			<a href="https://www.instagram.com/soberichs/?fbclid=IwAR0i7EkevlAweJm56wksRbgJtxkBtTZ5TSHgv9XFd6vyIgdKSqktx_-5LNY" target="_blank"><img src="photos/instagram-black.png" alt="instagram logo" title="instagram logo"></a>
+
+			<a href="https://www.youtube.com/channel/UCH_V1Aa7jpM9GrD2qJXCtYg" target="_blank"><img src="photos/youtube.png" alt="youtube logo" title="youtube logo"></a>
+
+			<a href="https://open.spotify.com/artist/1ZFuAPXzsmVkmuXzk59U88" target="_blank"><img src="photos/spotify.png" alt="spotify logo" title="spotify logo"></a>
+
+			</div>
 
 		</aside>
-		
+		</div>
 	</main>
 
-	</body>
-
-		<footer>
+	<footer>
 		<p>Copyright 2018</p>
-		</footer>
+	</footer>
 
-<script src="js/hamburger.js"></script>
+	<script src="js/hamburger.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/lightbox.js"></script>
 
+	</body>
 </html>

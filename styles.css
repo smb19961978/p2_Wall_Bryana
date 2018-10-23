@@ -32,10 +32,10 @@ figure img{
 }
 
 main p {
-	width: 80%;
+	
 	color: black; 
 	margin: auto;
-	padding: 1%;
+	padding: 2% 0 0 0;
 	text-decoration: none;
 
   
@@ -106,7 +106,13 @@ main img{
   height: 45vh; 
   margin:0 auto;
   transition: transform .2s;
+  padding: 5% 7% 0 0; 
+  margin-left: 15%; 
 
+}
+
+.oct{
+  margin-top: 15%; 
 }
 
 .oct:hover{
@@ -124,6 +130,19 @@ main img{
 .oct,.nov,.dec{
   float: left;
   
+}
+
+.row, .column img{
+  display: none;
+}
+
+.social{
+  width: 25%; 
+  margin: auto;
+}
+
+aside p{
+  margin-bottom: 2%; 
 }
 
 nav ul li{
@@ -144,6 +163,15 @@ main video{
   display: none;
 }
 
+.hide-image{
+  padding-top: 5%; 
+}
+
+iframe{
+  display: flex;
+  flex-grow: 1;
+}
+
 
 @media (min-width: 320px){
 	.desktop-menu{
@@ -158,6 +186,24 @@ main video{
     width: 100%;
   }
 
+  figure img{
+	display: none;
+}
+
+inside-page-logo-index{
+	display: none;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+
+  .ml3 {
+  font-weight: 900;
+  font-size: 3em;
+}
+
   .hamburger{
     display: none;
   }
@@ -165,7 +211,7 @@ main video{
   .desktop-menu{
     display: block;
     margin-top: 2%;  
-    width: 75%;
+    width: 100%;
     text-align: right;
     text-transform: uppercase;
   }  
@@ -184,8 +230,9 @@ main video{
   h2{
   font-size: 2em; 
   font-weight: bold;
-  
-}
+  margin-left: 5% 
+
+  }
 
   header{ 
   width: 100%; 
@@ -222,7 +269,196 @@ main video{
     justify-content: space-between;
   }
 
+  aside img{
+  width: 5%; 
+
   }
+
+  aside p{
+  
+  font-size: 2em; 
+  }
+
+  aside{
+    width: 80%; 
+  }
+
+  .social{
+    display: inline;
+
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .hide-image{
+    display: none;
+  }
+
+  .social img{
+    width: 8%; 
+    display: inline;
+    padding-left: 10%; 
+    padding-right: 1%; 
+  }
+
+  .row, .column img{
+  display: block;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.oct{
+  margin-top: 2%; 
+}
+
+.oct, .nov, .dec{
+  width: 200px; 
+  height: 45vh; 
+  margin:0 auto;
+  transition: transform .2s;
+  padding: 5% 7% 0 0; 
+  margin-left: 5%; 
+
+}
+
+iframe{
+  display: flex;
+  padding-left: 30%; 
+  padding-bottom: 15%;
+}
+
+
+}
+
+/*LIGHTBOX*/
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* *********hamburger menu styles******* */
 

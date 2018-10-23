@@ -24,7 +24,7 @@
 	<button class="hamburger">&#9776;</button>
   	<button class="cross">&#735;</button>
 
-	<header>	
+	<header class="about-header">	
 		<img class="inside-page-logo" src="photos/logo.png" alt="logo" title="logo">
 	
 		<nav class="menu">
@@ -43,7 +43,7 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="newmusic.html">New Music</a></li>
+				<li class="current"><a href="newmusic.html">New Music</a></li>
 				<li><a href="events.html">Events</a></li>
 			</ul>
 
@@ -53,7 +53,8 @@
 
 		<main>
 
-			<p> <h1> New Music </h1> </p>
+			<p> <h1 class="ml3"> New Music </h1> </p>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 			<p><h2>My new EP "Indecisively In Love" is out now</h2> </p>
 
@@ -63,14 +64,16 @@
 
 			<a href="https://open.spotify.com/artist/1ZFuAPXzsmVkmuXzk59U88" target="blank"><img class="spotify" src="photos/spotify.png" alt="spotify music link" title="spotify music link"></a>
 
-		</main>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/y7Xh_HI2YGk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-	</body>
+		</main>
 
 	<footer>
 		<p>Copyright 2018</p>
 	</footer>
 
 	<script src="js/hamburger.js"></script>
-
+	<script src="js/animate.js"></script>
+	
+	</body>
 </html>
