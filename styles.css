@@ -25,32 +25,17 @@ body{
    background-color: #000000;
 }
 
-figure img{
-	width: 100%;
-	max-width: 960px;
-	margin: auto;
-}
 
-main p {
-	
-	color: black; 
-	margin: auto;
-	padding: 2% 0 0 0;
-	text-decoration: none;
-
-  
+aside p {
+    
 }
 
 h2{
-  font-size: 1.5em; 
+  font-size: 1.2em; 
   font-weight: bold;
-  width: 80%;
-  margin: auto;
-}
-
-figure {
-  background-color: #000000;
-  height: 100vh;
+  width: 100%;
+  text-align:center ; 
+  padding-top: 5%; 
 }
 
 h1{
@@ -77,13 +62,12 @@ footer{
   color: #ffffff; 
   text-align: center;
   padding: 2%; 
-  width: 100%;
+  width: 96%;
   font-family: 'Lato', sans-serif;
 }
 
 main img{
   width: 100%;
-  padding-right: 5%; 
   margin: auto;
   display: block;
 }
@@ -101,7 +85,7 @@ main img{
   background-color: rgba(0,0,0,0);
 }
 
-.oct, .nov, .dec{
+.nov, .dec{
   width: 200px; 
   height: 45vh; 
   margin:0 auto;
@@ -112,8 +96,13 @@ main img{
 }
 
 .oct{
-  margin-top: 15%; 
+  width: 200px; 
+  height: 45vh; 
+  padding-top: 20%;
+  padding-right: 7%; 
+    
 }
+
 
 .oct:hover{
   transform: scale(1.5);
@@ -128,7 +117,7 @@ main img{
 }
 
 .oct,.nov,.dec{
-  float: left;
+ margin: auto;
   
 }
 
@@ -142,8 +131,21 @@ main img{
 }
 
 aside p{
-  margin-bottom: 2%; 
+  margin-bottom: 2%;
+  text-align: center;
 }
+
+figcaption{
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container article{
+        margin: 2%;
+        padding: 2%; 
+        width: 90%; 
+    }
 
 nav ul li{
   display: inline;
@@ -168,8 +170,9 @@ main video{
 }
 
 iframe{
-  display: flex;
-  flex-grow: 1;
+  width: 100%;
+  margin: auto;
+  display: block
 }
 
 
@@ -179,16 +182,25 @@ iframe{
 	}
 }
 
+@media (min-width:370px){
+    h2{
+        font-size: 2em; 
+    }
+}
+
+@media (min-width:600px){
+    .oct{
+        padding-top: 10%; 
+    }
+}
+
 @media (min-width: 1024px){
   main video{
     display: block;
     position: fixed;
     width: 100%;
   }
-
-  figure img{
-	display: none;
-}
+  
 
 inside-page-logo-index{
 	display: none;
@@ -226,11 +238,12 @@ inside-page-logo-index{
     width: 15%; 
     margin-left: 5%; 
   }
-
+   
   h2{
   font-size: 2em; 
   font-weight: bold;
-  margin-left: 5% 
+  padding-top: 5%; 
+  text-align: center;
 
   }
 
@@ -251,6 +264,13 @@ inside-page-logo-index{
   justify-content: center;
   }
 
+.flex-container article{
+        margin: 2%;
+        padding: 2%; 
+        width: 75%; 
+    }
+
+    
   img {
     display: none;
 
@@ -277,10 +297,12 @@ inside-page-logo-index{
   aside p{
   
   font-size: 2em; 
-  }
-
-  aside{
-    width: 80%; 
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 15vh; 
+  padding-top: 2%; 
+  margin-bottom: 2%; 
   }
 
   .social{
@@ -316,19 +338,25 @@ inside-page-logo-index{
 .oct, .nov, .dec{
   width: 200px; 
   height: 45vh; 
-  margin:0 auto;
   transition: transform .2s;
-  padding: 5% 7% 0 0; 
-  margin-left: 5%; 
-
-}
+ }
+.dec {
+padding-bottom: 5%;
+    }
 
 iframe{
-  display: flex;
-  padding-left: 30%; 
-  padding-bottom: 15%;
+    width: 80%; 
+    display: block;
+    margin: auto;
+    min-height:400px;
+    padding-bottom: 3%; 
 }
 
+    figcaption{
+        font-size: 1.2em; 
+        font-weight: bold;
+        text-align: center;
+    }
 
 }
 
